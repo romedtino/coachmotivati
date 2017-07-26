@@ -6,9 +6,9 @@
  **/
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const tokens = require("./tokens.js")
 
-
-client.login("INSERT_TOKEN_HERE");
+client.login(tokens.bottoken);
 
 
 client.on("ready", () => {
